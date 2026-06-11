@@ -1,0 +1,20 @@
+#main{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    
+    }
+h1{
+    color: rgb(15, 15, 124);
+    text-align: center;
+}
+button{
+    margin: 100px;
+}
+body{
+    text-align: center;
+     background-image: url(https://tse1.mm.bing.net/th/id/OIP.8zPOxMJpQQ24A0iK49aY2AHaE7?pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4%;
+}
