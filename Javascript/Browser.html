@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const save=()=>{
+            const saveInto=localStorage.setItem("name,name")
+            
+            console.log(saveInto)
+        //    const name=String(document.getElementById("ipt").value)
+        //     const saveInto=sessionStorage.setItem("name,name")
+        //     console.log(saveInto)
+            document.getElementById("ipt").value=""
+
+
+        }
+    </script>
+</head>
+<body>
+    <imput type="text" name="" id=""ipt>
+    <button onclick="save()"> Add to local storage button</button>
+    
+</body>
+</html>

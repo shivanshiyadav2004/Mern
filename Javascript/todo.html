@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+
+    <script>
+
+        function todos() {
+
+            const list = document.getElementById("list1").value;
+
+            if (list === "") {
+                alert("Enter something");
+                return;
+            }
+
+            const li = document.createElement("li");
+
+            li.innerHTML = `
+                <span>${list}</span>
+                <button onclick="updateTask(this)">Update</button>
+                <button onclick="deleteTask(this)">Delete</button>
+            `;
+
+            document.getElementById("datalist").appendChild(li);
+
+            document.getElementById("list1").value = "";
+        }
+
+
+        function deleteTask(btn) {
+            btn.parentElement.remove();
+        }
+
+
+        function updateTask(btn) {
+
+            let newList = prompt("Enter something:");
+
+            if (newList !== null && newList !== "") {
+                btn.parentElement.querySelector("span").innerHTML = newList;
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+
+    <input type="text" id="list1">
+    <button onclick="todos()">Add</button>
+
+    <ul id="datalist"></ul>
+
+</body>
+</html>

@@ -44,7 +44,12 @@ num=[2,3,4,5,6,7,8,9]
 //     return i>5
 // })
 // console.log(large)
-const large=num.filter(i=>{
-    return i>5
- })
- console.log(large)
+//filter metthod
+// const large=num.filter(i=>{
+//     return i>5
+//  })
+//  console.log(large)
+num.reduce((a,b)=>{
+    a+b,0
+})
+console.log(b)

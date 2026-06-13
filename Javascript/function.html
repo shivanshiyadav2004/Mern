@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function message(){
+            alert("hey")
+        }
+        
+        function buttoncllick(){
+        const timedate=document.getElementById("dateandtime").innerHTML= "time is: "+ new Date
+        
+        }
+        function message(){
+            alert("shivanshi")
+        }
+        const printName=()=>{
+        const myname=String(document.getElementById("myname1").value)
+        document.getElementBYId("name1").innerHTML=givenname
+
+        }
+
+        
+
+        
+        const sum=()=>{
+            const a = num1(document.getElementById("num1").value);
+            const  b =num2(document.getElementById("num2").value);
+            if (a === "" || b === "") {
+          alert("Please enter both numbers");
+         return;
+            const c=a+b
+            document.getElementById("sum").innerHTML = c
+
+
+        }
+
+        const sub=()=>{
+            const a = Number(document.getElementById("num1").value);
+            const  b =Number(document.getElementById("num2").value);
+
+        }
+            const c=a-b
+            document.getElementById("sub").innerHTML = c
+            
+        }
+        
+        const mul=()=>{
+            const a = Number(document.getElementById("num1").value);
+            const  b =Number(document.getElementById("num2").value);
+            const c=a*b
+            document.getElementById("mul").innerHTML = c
+
+        }
+        const div=()=>{
+            const a = Number(document.getElementById("num1").value);
+            const  b =Number(document.getElementById("num2").value);
+            const c=a/b
+            document.getElementById("div").innerHTML = c
+
+        }
+
+    </script>
+</head>
+<body>
+    
+    <input type="number" name="" id="num1" placeholder="enter a number1">
+    <input type="number" name="" id="num2" placeholder="enter a number2">
+    <button onclick="sum()">Calculate</button><br><br>
+    <button onclick="sub()">subtraction</button><br><br>
+    <button onclick="mul()">multiplication</button><br><br>
+    <button onclick="div()">division</button>
+    <p id="sum"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+     <p id="div"></p>
+
+
+    <input type="text" name="" id="myname1">
+    <button onclick="">add name</button>
+    <p id="name1"></p>
+
+    <button onmouseover="message()">click me</button>
+    <button onclick="buttoncllick()" >date and time</button>
+    <p id="dateandtime"> </p>
+    <button onmouseover="message()">click me</button>
+</body>
+</html>
